@@ -1,13 +1,23 @@
 {
     "name": "asahasrabuddhe/laravel-mjml",
     "description": "A package that enables using MJML with Laravel Mailables.",
-    "license" : "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ajitem Sahasrabuddhe",
             "email": "ajitem.s@outlook.com"
         }
     ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "symfony/process": "^7.0",
+        "soundasleep/html2text": "^2.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "php-coveralls/php-coveralls": "^2.5.2"
+    },
     "autoload": {
         "psr-4": {
             "Asahasrabuddhe\\LaravelMJML\\": "src/"
@@ -24,13 +34,5 @@
                 "Asahasrabuddhe\\LaravelMJML\\Providers\\MJMLServiceProvider"
             ]
         }
-    },
-    "require-dev": {
-        "orchestra/testbench": "~6.41.0",
-        "php-coveralls/php-coveralls": "^2.5.2"
-    },
-    "require": {
-        "symfony/process": "^4.0.0|^5.0.0|^6.0.0|^7.0.0",
-        "soundasleep/html2text": "~2.1.0"
     }
 }
